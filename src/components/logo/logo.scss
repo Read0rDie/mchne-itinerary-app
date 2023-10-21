@@ -1,0 +1,16 @@
+.logo{
+    display: table-cell;
+    vertical-align: middle;
+    span{
+        display: inline-block;
+        //vertical-align: middle;
+        line-height: normal;
+        font-weight:bolder;
+        &.left{
+            color: #fb8b24 !important;
+        }
+        &.right{
+            color: #00b4d8 !important;
+        }
+    }
+}

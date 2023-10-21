@@ -1,0 +1,51 @@
+.container{
+    // variables
+    --container-padding-vert: 0.5rem;
+    --container-padding-horz: 2.5rem;
+    --orange:rgb(251, 139, 36);
+    --blue:rgb(0, 180, 216);
+
+    width: calc(100% - (2 * var(--container-padding-horz)));
+    height: calc(3rem - (2 * var(--container-padding-vert)));
+    padding: var(--container-padding-vert) var(--container-padding-horz);
+    background-color: rgb(32, 32, 32);
+    color: rgb(255,255,255);
+    display: flex;
+    flex-direction: row;
+
+    .link{
+        padding: 0.25rem;
+        &:hover{
+            cursor: pointer;
+            color:rgb(200,200,200);
+        }
+    }
+
+    .logo-link{
+        padding-right: var(--container-padding-horz);
+    }
+
+    .pill-btn{
+        padding: 0 0.5rem;
+        border-radius: 1rem;
+        font-weight: bold;
+        &.orange{
+            background-color: var(--orange);
+        }
+        &.blue{
+            background-color: var(--blue);
+        }
+    }
+
+    .left-container{
+        width:50%;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .right-container{
+        width:50%;
+        display: flex;
+        flex-direction: row-reverse;
+    }
+}
